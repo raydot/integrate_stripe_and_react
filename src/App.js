@@ -7,7 +7,8 @@ import CheckoutForm from './CheckoutForm'
 class App extends Component {
   render() {
     return (
-      <StripeProvider apiKey='pk_test_JJbMfkIUGHOHwr8xwxByQv1A00rfXJMk'>
+      <StripeProvider apiKey='pk_test_JJbMfkIUGHOHwr8xwxByQv1A00rfXJMkHx'>
+      
         <div className="bar">
             <CheckoutForm />
         </div>
@@ -16,4 +17,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default App

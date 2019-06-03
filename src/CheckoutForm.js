@@ -1,20 +1,21 @@
 import React from 'react'
-import { CardElement, injectStripe, Elements } from 'react-stripe-elements'
-import _CardForm from './_CardForm'
+//import { CardElement, injectStripe, Elements } from 'react-stripe-elements'
+import CardForm from './CardForm'
+import { Elements } from 'react-stripe-elements'
 
-const CardForm = injectStripe(_CardForm)
+//const CardForm = injectStripe(_CardForm)
 
 class CheckoutForm extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { complete: false }
-    //this.submit = this.submit.bind(this)
-  }
+  // constructor(props) {
+  //   super(props)
+  //   this.state = { complete: false }
+  //   //this.submit = this.submit.bind(this)
+  // }
 
  
 
   render() {
-    if (this.state.complete) return <h1>Purchase Complete!</h1>
+    //if (this.state.complete) return <h1>Purchase Complete!</h1>
 
     return (
         <div className='checkout'>
