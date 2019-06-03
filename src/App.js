@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+//import { render } from 'react-dom'
+import { StripeProvider } from 'react-stripe-elements'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import CheckoutForm from './CheckoutForm'
+
+class App extends Component {
+  render() {
+    return (
+      <StripeProvider apiKey='pk_test_JJbMfkIUGHOHwr8xwxByQv1A00rfXJMk'>
+        <div className="bar">
+            <CheckoutForm />
+        </div>
+      </StripeProvider>
+    )
+  }
 }
 
 export default App;

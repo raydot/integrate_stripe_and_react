@@ -5,6 +5,15 @@
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+
+
+    <!-- STRIPE -->
+    <!--
+        For PCI compliance purposes, you must load Stripe.js directly from Stripe's servers
+        at runtime
+    -->
+    <script src="https://js.stripe.com/v3"></script>
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -23,6 +32,7 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <h1>My react app</h1>
     <div id="root"></div>
     <!--
       This HTML file is a template.
